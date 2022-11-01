@@ -1,0 +1,873 @@
+[2022-10-21 12:59:37.577 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 12:59:39.435 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 12:59:39.435 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 12:59:39.445 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 12:59:39.445 +05:30  INF]  Hosting environment: Development
+[2022-10-21 12:59:39.445 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 12:59:49.391 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 12:59:50.950 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/PostProductProducts/GetProducts - -
+[2022-10-21 12:59:51.468 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 12:59:51.493 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 23.5503ms
+[2022-10-21 12:59:51.493 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 2159.6247ms
+[2022-10-21 12:59:51.542 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 12:59:52.035 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 492.3991ms
+[2022-10-21 12:59:52.263 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 12:59:53.270 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1007.4719ms
+[2022-10-21 12:59:53.299 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/PostProductProducts/GetProducts - - - 404 0 - 2349.2939ms
+[2022-10-21 13:00:52.138 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:00:52.940 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:00:52.940 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:00:52.970 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:00:52.971 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:00:52.971 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:00:54.443 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:00:55.209 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:00:55.415 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:00:55.417 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:00:55.441 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 997.8351ms
+[2022-10-21 13:00:55.441 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 19.3773ms
+[2022-10-21 13:00:55.490 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.9513ms
+[2022-10-21 13:00:55.522 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:00:55.689 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:00:55.706 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:00:56.191 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 502.4240ms
+[2022-10-21 13:01:00.770 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:01:06.378 +05:30  INF]  Executed DbCommand (261ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:01:07.103 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:01:07.286 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 11556.5829ms
+[2022-10-21 13:01:07.287 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:01:07.345 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 12135.2798ms
+[2022-10-21 13:01:09.051 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/a804ed33-d0db-465e-98e6-a2c78137a503Annotation 2019-06-07 170039.png - -
+[2022-10-21 13:01:09.051 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/012bfb01-f862-4b56-8f38-c0abf1fc9291Screenshot (1).png - -
+[2022-10-21 13:01:09.067 +05:30  INF]  The file /Upload/Images/a804ed33-d0db-465e-98e6-a2c78137a503Annotation 2019-06-07 170039.png was not modified
+[2022-10-21 13:01:09.067 +05:30  INF]  The file /Upload/Images/012bfb01-f862-4b56-8f38-c0abf1fc9291Screenshot (1).png was not modified
+[2022-10-21 13:01:09.068 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/012bfb01-f862-4b56-8f38-c0abf1fc9291Screenshot (1).png - - - 304 - image/png 16.3698ms
+[2022-10-21 13:01:09.068 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/a804ed33-d0db-465e-98e6-a2c78137a503Annotation 2019-06-07 170039.png - - - 304 - image/png 16.3720ms
+[2022-10-21 13:02:04.921 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="eb62cc34-982b-4d87-830c-83168ecc209d" 477
+[2022-10-21 13:02:04.939 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:02:04.984 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:04:03.658 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:04:04.302 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:04:04.303 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:04:04.313 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:04:04.313 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:04:04.313 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:04:07.855 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:04:08.490 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:04:08.761 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:04:08.827 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:04:08.902 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:04:08.925 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:04:08.953 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 43.5552ms
+[2022-10-21 13:04:08.977 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1122.0932ms
+[2022-10-21 13:04:09.031 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.1418ms
+[2022-10-21 13:04:09.339 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:04:09.889 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 550.5881ms
+[2022-10-21 13:04:12.524 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:04:14.725 +05:30  INF]  Executed DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:04:15.043 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:04:15.144 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6294.162ms
+[2022-10-21 13:04:15.147 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:04:15.168 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6678.0567ms
+[2022-10-21 13:08:19.009 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="d5108e92-74cc-4e78-a9df-f914e8fafb19" 187
+[2022-10-21 13:08:19.012 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:08:19.051 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:08:19.150 +05:30  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2022-10-21 13:08:19.168 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 117.1816ms
+[2022-10-21 13:08:19.168 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:08:19.169 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="d5108e92-74cc-4e78-a9df-f914e8fafb19" 187 - 400 - application/problem+json;+charset=utf-8 159.3079ms
+[2022-10-21 13:09:01.039 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:09:01.068 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:09:01.068 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:09:01.119 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:09:01.136 +05:30  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:09:01.136 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:09:01.137 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 68.1168ms
+[2022-10-21 13:09:01.137 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:09:01.137 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 98.2065ms
+[2022-10-21 13:10:06.410 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:10:07.491 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:10:07.491 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:10:07.497 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:10:07.498 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:10:07.498 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:10:08.626 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:10:08.746 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:10:09.132 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:10:09.209 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:10:09.586 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:10:09.608 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:10:09.653 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 44.9870ms
+[2022-10-21 13:10:09.688 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1084.2650ms
+[2022-10-21 13:10:09.755 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 168.5377ms
+[2022-10-21 13:10:10.000 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:10:10.500 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 500.2213ms
+[2022-10-21 13:10:12.554 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:10:14.840 +05:30  INF]  Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:10:15.299 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:10:15.351 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6121.9991ms
+[2022-10-21 13:10:15.353 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:10:15.377 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6631.3901ms
+[2022-10-21 13:11:01.218 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="9f46f7f2-dfd0-4c31-b06b-88ab2eb568ba" 477
+[2022-10-21 13:11:01.229 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:11:01.273 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:12:12.723 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:12:13.989 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:12:13.989 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:12:14.022 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:12:14.022 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:12:14.022 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:12:15.281 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:12:15.281 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:12:15.630 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:12:15.660 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:12:16.006 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:12:16.009 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:12:16.063 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 37.6392ms
+[2022-10-21 13:12:16.095 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 823.6747ms
+[2022-10-21 13:12:16.134 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 124.9605ms
+[2022-10-21 13:12:16.389 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:12:16.793 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 404.7261ms
+[2022-10-21 13:12:19.134 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:12:21.181 +05:30  INF]  Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:12:21.467 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:12:21.512 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5833.2986ms
+[2022-10-21 13:12:21.513 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:12:21.540 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6268.9084ms
+[2022-10-21 13:13:06.302 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="005a8571-051a-4362-8667-c4713d6d7319" 441
+[2022-10-21 13:13:06.311 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:13:06.354 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:15:49.578 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:15:50.397 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:15:50.397 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:15:50.423 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:15:50.423 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:15:50.424 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:15:51.776 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:15:52.207 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:15:52.522 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:15:52.574 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:15:52.779 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:15:52.793 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:15:52.903 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 103.2424ms
+[2022-10-21 13:15:52.913 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1146.9486ms
+[2022-10-21 13:15:52.952 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 159.3257ms
+[2022-10-21 13:15:53.258 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:15:53.801 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 542.9480ms
+[2022-10-21 13:15:56.218 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:15:58.533 +05:30  INF]  Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:15:58.867 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:15:58.931 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6330.7914ms
+[2022-10-21 13:15:58.933 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:15:58.964 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6757.3500ms
+[2022-10-21 13:16:31.730 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="01554778-a234-47ab-b824-2b0aaf5dc18a" 532
+[2022-10-21 13:16:31.738 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:16:31.775 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:20:49.528 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:20:50.883 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:20:50.883 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:20:50.899 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:20:50.899 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:20:50.899 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:20:52.609 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:20:52.609 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:20:53.247 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:20:53.320 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:20:53.869 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:20:53.873 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:20:53.899 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 27.1622ms
+[2022-10-21 13:20:53.928 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1338.8753ms
+[2022-10-21 13:20:53.975 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.1271ms
+[2022-10-21 13:20:54.294 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:20:55.068 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 773.8525ms
+[2022-10-21 13:20:57.812 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:20:59.901 +05:30  INF]  Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:21:00.200 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:21:00.261 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6917.1733ms
+[2022-10-21 13:21:00.263 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:21:00.305 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 7720.9199ms
+[2022-10-21 13:27:12.364 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:27:14.084 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:27:14.085 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:27:14.101 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:27:14.101 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:27:14.101 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:27:15.278 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:27:15.762 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:27:16.133 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:27:16.220 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:27:16.670 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:27:16.670 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:27:16.753 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 81.0510ms
+[2022-10-21 13:27:16.805 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1560.5257ms
+[2022-10-21 13:27:16.977 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 306.9159ms
+[2022-10-21 13:27:17.267 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:27:17.693 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 425.7210ms
+[2022-10-21 13:27:19.480 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:27:21.972 +05:30  INF]  Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:27:22.312 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:27:22.378 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6127.9087ms
+[2022-10-21 13:27:22.379 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:27:22.414 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6652.8071ms
+[2022-10-21 13:29:54.317 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:29:55.653 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:29:55.653 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:29:55.668 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:29:55.668 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:29:55.668 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:29:57.017 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:29:57.017 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:29:57.388 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:29:57.456 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:29:57.892 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:29:57.900 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:29:57.927 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 34.1135ms
+[2022-10-21 13:29:57.956 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 951.5053ms
+[2022-10-21 13:29:57.986 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.8042ms
+[2022-10-21 13:29:58.473 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:29:59.171 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 697.9977ms
+[2022-10-21 13:30:01.256 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:30:03.291 +05:30  INF]  Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:30:03.604 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:30:03.664 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6179.9623ms
+[2022-10-21 13:30:03.666 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:30:03.702 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6697.3710ms
+[2022-10-21 13:32:41.086 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:32:41.360 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:32:41.360 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:32:41.363 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:32:41.363 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:32:41.363 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:32:42.110 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:32:42.489 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:32:42.602 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:32:42.623 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:32:42.649 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 40.3300ms
+[2022-10-21 13:32:42.672 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 565.1568ms
+[2022-10-21 13:32:42.690 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.3739ms
+[2022-10-21 13:32:42.717 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:32:42.755 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:32:42.955 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:32:43.374 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 418.8807ms
+[2022-10-21 13:32:45.172 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:32:46.808 +05:30  INF]  Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:32:47.036 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:32:47.080 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 4306.0421ms
+[2022-10-21 13:32:47.082 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:32:47.105 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 4616.4786ms
+[2022-10-21 13:35:11.936 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:35:12.232 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:35:12.232 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:35:12.235 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:35:12.235 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:35:12.236 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:35:12.877 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:35:13.162 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:35:13.263 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:35:13.263 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:35:13.271 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 7.7761ms
+[2022-10-21 13:35:13.272 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:35:13.279 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 403.1718ms
+[2022-10-21 13:35:13.289 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.7119ms
+[2022-10-21 13:35:13.305 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:35:13.425 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:35:13.768 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 343.3030ms
+[2022-10-21 13:35:15.551 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:35:16.992 +05:30  INF]  Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:35:17.221 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:35:17.266 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 3944.6815ms
+[2022-10-21 13:35:17.267 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:35:17.284 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 4122.2800ms
+[2022-10-21 13:37:50.708 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:37:51.007 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:37:51.007 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:37:51.010 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:37:51.011 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:37:51.011 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:37:51.630 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:37:51.814 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:37:51.923 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:37:51.947 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:37:52.017 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:37:52.018 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:37:52.056 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.1444ms
+[2022-10-21 13:37:52.089 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 463.5347ms
+[2022-10-21 13:37:52.095 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.6013ms
+[2022-10-21 13:37:52.288 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:37:52.705 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 416.5474ms
+[2022-10-21 13:37:54.523 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:37:56.124 +05:30  INF]  Executed DbCommand (97ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:37:56.361 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:37:56.400 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 4440.6325ms
+[2022-10-21 13:37:56.401 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:37:56.420 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 4605.3087ms
+[2022-10-21 13:50:42.847 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:50:43.983 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:50:43.983 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:50:43.996 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:50:43.997 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:50:43.997 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:50:50.682 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:50:51.425 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:50:51.546 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:50:51.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 13.1619ms
+[2022-10-21 13:50:51.572 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 901.5828ms
+[2022-10-21 13:50:51.578 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:50:51.626 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.5724ms
+[2022-10-21 13:50:52.120 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:50:52.200 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:50:52.238 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:50:52.716 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 595.6873ms
+[2022-10-21 13:50:55.662 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:50:57.863 +05:30  INF]  Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:50:58.145 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:50:58.211 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5960.848ms
+[2022-10-21 13:50:58.212 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:50:58.229 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 6803.6932ms
+[2022-10-21 13:59:00.486 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 13:59:01.208 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 13:59:01.209 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 13:59:01.217 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 13:59:01.217 +05:30  INF]  Hosting environment: Development
+[2022-10-21 13:59:01.217 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 13:59:02.469 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 13:59:02.634 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 13:59:02.955 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:59:03.019 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 13:59:03.438 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 13:59:03.447 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 13:59:03.467 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 26.4160ms
+[2022-10-21 13:59:03.515 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1054.4373ms
+[2022-10-21 13:59:03.532 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.5212ms
+[2022-10-21 13:59:03.769 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 13:59:04.118 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 349.1077ms
+[2022-10-21 13:59:05.977 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 13:59:07.817 +05:30  INF]  Executed DbCommand (115ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 13:59:08.103 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 13:59:08.139 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5107.7274ms
+[2022-10-21 13:59:08.140 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 13:59:08.168 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5534.2175ms
+[2022-10-21 13:59:55.730 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="8114d40d-5ce5-454b-8689-a3fb65c9bfbb" 19731
+[2022-10-21 13:59:55.735 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 13:59:55.765 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:00:56.112 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:00:57.053 +05:30  INF]  Executed DbCommand (272ms) [Parameters=[@__name_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [products] AS [p]
+        WHERE [p].[Name] = @__name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-10-21 14:01:01.577 +05:30  INF]  Executed DbCommand (447ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [products] ([ImageName], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[2022-10-21 14:01:19.708 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-21 14:01:19.710 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 83944.8683ms
+[2022-10-21 14:01:19.711 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 14:01:25.531 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="8114d40d-5ce5-454b-8689-a3fb65c9bfbb" 19731 - 200 0 - 89801.4595ms
+[2022-10-21 14:01:38.057 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 14:01:38.068 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:01:38.068 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:01:38.186 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:01:38.189 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 14:01:38.190 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 14:01:38.191 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 122.0953ms
+[2022-10-21 14:01:38.191 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:01:38.191 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 133.2584ms
+[2022-10-21 14:01:38.286 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - -
+[2022-10-21 14:01:38.288 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - - - 404 0 - 1.9072ms
+[2022-10-21 14:04:43.740 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/api/Products/Getproducts - -
+[2022-10-21 14:04:43.740 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:04:43.742 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:04:43.746 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:04:43.747 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 14:04:43.749 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 14:04:43.749 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 6.7141ms
+[2022-10-21 14:04:43.749 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:04:43.749 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/api/Products/Getproducts - - - 200 - application/json;+charset=utf-8 9.1414ms
+[2022-10-21 14:06:28.557 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 14:06:28.921 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 14:06:28.921 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 14:06:28.924 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 14:06:28.924 +05:30  INF]  Hosting environment: Development
+[2022-10-21 14:06:28.924 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 14:06:30.074 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 14:06:30.540 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 14:06:30.848 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:06:30.905 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:06:31.087 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 14:06:31.087 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 14:06:31.154 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 50.2122ms
+[2022-10-21 14:06:31.199 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1134.5538ms
+[2022-10-21 14:06:31.361 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 274.4997ms
+[2022-10-21 14:06:31.584 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 14:06:32.196 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 612.3130ms
+[2022-10-21 14:06:34.310 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:06:36.047 +05:30  INF]  Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 14:06:36.298 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 14:06:36.338 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5417.4142ms
+[2022-10-21 14:06:36.339 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:06:36.359 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5819.3858ms
+[2022-10-21 14:06:37.497 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - -
+[2022-10-21 14:06:37.499 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - - - 404 0 - 1.9722ms
+[2022-10-21 14:07:14.753 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 14:07:15.434 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 14:07:15.437 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 14:07:15.446 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 14:07:15.447 +05:30  INF]  Hosting environment: Development
+[2022-10-21 14:07:15.447 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 14:07:16.406 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 14:07:16.406 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 14:07:16.809 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:07:16.857 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:07:17.191 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 14:07:17.191 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 14:07:17.221 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 28.4134ms
+[2022-10-21 14:07:17.250 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 857.0893ms
+[2022-10-21 14:07:17.257 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.5433ms
+[2022-10-21 14:07:17.519 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 14:07:17.929 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 410.2106ms
+[2022-10-21 14:07:19.448 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:07:21.153 +05:30  INF]  Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 14:07:21.453 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 14:07:21.492 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 4617.6179ms
+[2022-10-21 14:07:21.493 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:07:21.512 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5119.4246ms
+[2022-10-21 14:07:22.419 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - -
+[2022-10-21 14:07:22.422 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - - - 404 0 - 3.4367ms
+[2022-10-21 14:07:43.381 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="bfadacb4-b821-4b4a-85bb-d2619a4b740b" 19734
+[2022-10-21 14:07:43.389 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 14:07:43.417 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:08:15.438 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:08:15.722 +05:30  INF]  Executed DbCommand (36ms) [Parameters=[@__name_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [products] AS [p]
+        WHERE [p].[Name] = @__name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-10-21 14:08:15.864 +05:30  INF]  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [products] ([ImageName], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[2022-10-21 14:08:15.921 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-21 14:08:15.922 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 32504.7104ms
+[2022-10-21 14:08:15.923 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 14:08:15.926 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="bfadacb4-b821-4b4a-85bb-d2619a4b740b" 19734 - 200 0 - 32544.3829ms
+[2022-10-21 14:08:15.942 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 14:08:15.943 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:08:15.943 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 14:08:15.991 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 14:08:15.993 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 14:08:15.993 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 14:08:15.994 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 50.8909ms
+[2022-10-21 14:08:15.994 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 14:08:15.994 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 51.4062ms
+[2022-10-21 14:08:16.031 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - -
+[2022-10-21 14:08:16.031 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/a5de1861-6d79-4e55-b15b-2b8b6d06f0c5ImageName - - - 404 0 - 0.7509ms
+[2022-10-21 14:08:16.032 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/856511a9-35ef-449e-a653-bafc8ff56fe0first.png - -
+[2022-10-21 14:08:16.114 +05:30  INF]  Sending file. Request path: '/Upload/Images/856511a9-35ef-449e-a653-bafc8ff56fe0first.png'. Physical path: 'D:\SaiKumar\HalfDegreeApi\wwwroot\Upload\Images\856511a9-35ef-449e-a653-bafc8ff56fe0first.png'
+[2022-10-21 14:08:16.114 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/856511a9-35ef-449e-a653-bafc8ff56fe0first.png - - - 200 19151 image/png 82.4741ms
+[2022-10-21 15:21:46.223 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 15:21:49.654 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 15:21:49.654 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 15:21:49.660 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 15:21:49.660 +05:30  INF]  Hosting environment: Development
+[2022-10-21 15:21:49.660 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 15:21:59.829 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 15:22:04.400 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 15:22:04.562 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 4721.6345ms
+[2022-10-21 15:22:04.630 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 15:22:04.720 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 89.8813ms
+[2022-10-21 15:22:04.726 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 15:22:04.937 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 211.5985ms
+[2022-10-21 15:22:05.626 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:22:05.646 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 15:22:05.986 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:22:06.948 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1302.2607ms
+[2022-10-21 15:22:13.773 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:22:19.183 +05:30  INF]  Executed DbCommand (176ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 15:22:19.379 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 15:22:19.673 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 13675.4758ms
+[2022-10-21 15:22:19.674 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:22:19.772 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 15372.6024ms
+[2022-10-21 15:23:27.109 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="804a8ad7-7edb-4a4e-ab02-9023f3a0ffc9" 19733
+[2022-10-21 15:23:27.117 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 15:23:27.156 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:23:46.638 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:23:47.823 +05:30  INF]  Executed DbCommand (395ms) [Parameters=[@__name_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [products] AS [p]
+        WHERE [p].[Name] = @__name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-10-21 15:23:49.127 +05:30  INF]  Executed DbCommand (213ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [products] ([ImageName], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[2022-10-21 15:23:49.479 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-21 15:23:49.482 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 22325.6626ms
+[2022-10-21 15:23:49.483 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 15:23:49.489 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="804a8ad7-7edb-4a4e-ab02-9023f3a0ffc9" 19733 - 200 0 - 22380.0145ms
+[2022-10-21 15:23:49.713 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 15:23:49.874 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:23:49.874 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:23:49.974 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:23:49.977 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 15:23:49.990 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 15:23:50.059 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 184.7039ms
+[2022-10-21 15:23:50.059 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:23:50.060 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 347.0745ms
+[2022-10-21 15:23:50.556 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 15:23:51.067 +05:30  INF]  Sending file. Request path: '/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png'. Physical path: 'D:\SaiKumar\HalfDegreeApi\wwwroot\Upload\Images\b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png'
+[2022-10-21 15:23:51.067 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 200 19151 image/png 511.7432ms
+[2022-10-21 15:33:45.596 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 15:33:47.562 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 15:33:47.562 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 15:33:47.567 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 15:33:47.567 +05:30  INF]  Hosting environment: Development
+[2022-10-21 15:33:47.567 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 15:33:54.803 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 15:33:56.357 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 15:33:56.475 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 15:33:56.475 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 15:33:56.713 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 210.6338ms
+[2022-10-21 15:33:56.713 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1924.4929ms
+[2022-10-21 15:33:56.713 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 193.6421ms
+[2022-10-21 15:33:57.214 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:33:57.239 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 15:33:57.370 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:33:57.902 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 662.9428ms
+[2022-10-21 15:34:00.848 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:34:04.239 +05:30  INF]  Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 15:34:04.466 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 15:34:04.657 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 7262.9837ms
+[2022-10-21 15:34:04.659 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:34:04.807 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 8449.6493ms
+[2022-10-21 15:34:07.861 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 15:34:07.874 +05:30  INF]  The file /Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png was not modified
+[2022-10-21 15:34:07.875 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 304 - image/png 14.5829ms
+[2022-10-21 15:37:22.127 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="d9f9e550-9a88-4c55-9b1b-b47ac6b1d606" 38178
+[2022-10-21 15:37:22.138 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 15:37:22.199 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:37:32.757 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:37:33.652 +05:30  INF]  Executed DbCommand (187ms) [Parameters=[@__name_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [products] AS [p]
+        WHERE [p].[Name] = @__name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-10-21 15:37:34.087 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [products] ([ImageName], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[2022-10-21 15:37:34.299 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-21 15:37:34.302 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 12102.877ms
+[2022-10-21 15:37:34.305 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 15:37:34.314 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="d9f9e550-9a88-4c55-9b1b-b47ac6b1d606" 38178 - 200 0 - 12186.3480ms
+[2022-10-21 15:37:34.377 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 15:37:34.502 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:37:34.502 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:37:34.651 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:37:34.653 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 15:37:34.654 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 15:37:34.654 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 151.721ms
+[2022-10-21 15:37:34.654 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:37:34.654 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 277.3111ms
+[2022-10-21 15:37:34.688 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - -
+[2022-10-21 15:37:34.689 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 15:37:34.691 +05:30  INF]  The file /Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png was not modified
+[2022-10-21 15:37:34.692 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 304 - image/png 2.4612ms
+[2022-10-21 15:37:34.776 +05:30  INF]  Sending file. Request path: '/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg'. Physical path: 'D:\SaiKumar\HalfDegreeApi\wwwroot\Upload\Images\cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg'
+[2022-10-21 15:37:34.777 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - - - 200 37545 image/jpeg 89.1005ms
+[2022-10-21 15:39:05.914 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 15:39:06.347 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 15:39:06.348 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 15:39:06.352 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 15:39:06.352 +05:30  INF]  Hosting environment: Development
+[2022-10-21 15:39:06.352 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 15:39:07.152 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 15:39:07.209 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 15:39:07.378 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:39:07.398 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 15:39:07.567 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 15:39:07.589 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 15:39:07.599 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.1788ms
+[2022-10-21 15:39:07.614 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 473.3359ms
+[2022-10-21 15:39:07.641 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.3782ms
+[2022-10-21 15:39:07.774 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 15:39:08.038 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 264.2055ms
+[2022-10-21 15:39:09.550 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 15:39:11.404 +05:30  INF]  Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 15:39:11.670 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 15:39:11.716 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 4303.124ms
+[2022-10-21 15:39:11.717 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 15:39:11.735 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 4525.7964ms
+[2022-10-21 15:39:12.823 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 15:39:12.824 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - -
+[2022-10-21 15:39:12.838 +05:30  INF]  The file /Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png was not modified
+[2022-10-21 15:39:12.838 +05:30  INF]  The file /Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg was not modified
+[2022-10-21 15:39:12.839 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 304 - image/png 15.8147ms
+[2022-10-21 15:39:12.839 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - - - 304 - image/jpeg 15.6544ms
+[2022-10-21 19:08:30.856 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 19:08:31.458 +05:30  INF]  Creating key {c42cfcac-8c74-49c3-9bf5-5ab40040e580} with creation date 2022-10-21 13:38:31Z, activation date 2022-10-23 11:13:58Z, and expiration date 2023-01-19 13:38:31Z.
+[2022-10-21 19:08:31.510 +05:30  INF]  Writing data to file 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys\key-c42cfcac-8c74-49c3-9bf5-5ab40040e580.xml'.
+[2022-10-21 19:08:33.416 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 19:08:33.416 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 19:08:33.423 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 19:08:33.423 +05:30  INF]  Hosting environment: Development
+[2022-10-21 19:08:33.423 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 19:08:40.254 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 19:08:41.620 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 19:08:41.917 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 19:08:41.956 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 19:08:42.127 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 50.0374ms
+[2022-10-21 19:08:42.127 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1728.2949ms
+[2022-10-21 19:08:42.248 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 291.8620ms
+[2022-10-21 19:08:42.576 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:08:42.622 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 19:08:42.845 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 19:08:43.380 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 534.4266ms
+[2022-10-21 19:08:46.712 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 19:08:50.204 +05:30  INF]  Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 19:08:50.542 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 19:08:50.664 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 8029.3719ms
+[2022-10-21 19:08:50.665 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:08:50.702 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 9081.6010ms
+[2022-10-21 19:08:52.221 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 19:08:52.231 +05:30  INF]  The file /Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png was not modified
+[2022-10-21 19:08:52.232 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 304 - image/png 11.6533ms
+[2022-10-21 19:08:52.284 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - -
+[2022-10-21 19:08:52.285 +05:30  INF]  The file /Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg was not modified
+[2022-10-21 19:08:52.285 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - - - 304 - image/jpeg 0.7444ms
+[2022-10-21 19:10:18.995 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-21 19:10:18.999 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-21 19:10:19.132 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-21 19:10:19.403 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 19:10:20.993 +05:30  INF]  Executed DbCommand (738ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-21 19:10:21.093 +05:30  INF]  Executed DbCommand (6ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-21 19:10:21.949 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-21 19:10:21.950 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 2817.9418ms
+[2022-10-21 19:10:21.950 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-21 19:10:21.950 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 2955.0119ms
+[2022-10-21 19:11:27.135 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="1c255c56-532d-4f86-8afa-8bff37764c99" 32335
+[2022-10-21 19:11:27.577 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 19:11:27.586 +05:30  INF]  Route matched with {action = "PostProduct", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PostProduct(HalfDegreeApi.Mapper.ImageMapper) on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 19:11:37.761 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 19:11:37.844 +05:30  INF]  Executed DbCommand (15ms) [Parameters=[@__name_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [products] AS [p]
+        WHERE [p].[Name] = @__name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2022-10-21 19:11:38.236 +05:30  INF]  Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [products] ([ImageName], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[2022-10-21 19:11:38.387 +05:30  INF]  Executing StatusCodeResult, setting HTTP status code 200
+[2022-10-21 19:11:38.389 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi) in 10802.0788ms
+[2022-10-21 19:11:38.390 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.PostProduct (HalfDegreeApi)'
+[2022-10-21 19:11:38.397 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="1c255c56-532d-4f86-8afa-8bff37764c99" 32335 - 200 0 - 11261.7837ms
+[2022-10-21 19:11:38.412 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 19:11:38.412 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:11:38.412 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 19:11:38.414 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 19:11:38.416 +05:30  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 19:11:38.416 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 19:11:38.417 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 4.5671ms
+[2022-10-21 19:11:38.417 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:11:38.417 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5.3788ms
+[2022-10-21 19:11:38.491 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - -
+[2022-10-21 19:11:38.639 +05:30  INF]  Sending file. Request path: '/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg'. Physical path: 'D:\SaiKumar\HalfDegreeApi\wwwroot\Upload\Images\2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg'
+[2022-10-21 19:11:38.640 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - - - 200 31764 image/jpeg 148.8986ms
+[2022-10-21 19:15:16.051 +05:30  INF]  Request starting HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="dd45bec3-2062-470d-9833-ec12b089b04b" 22040
+[2022-10-21 19:15:16.054 +05:30  INF]  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[2022-10-21 19:15:16.071 +05:30  INF]  AuthenticationScheme: Bearer was challenged.
+[2022-10-21 19:15:16.071 +05:30  INF]  Request finished HTTP/1.1 POST https://localhost:7242/api/Products/PostProduct multipart/form-data;+boundary="dd45bec3-2062-470d-9833-ec12b089b04b" 22040 - 401 0 - 19.9186ms
+[2022-10-21 19:15:16.132 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 19:15:16.132 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:15:16.132 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 19:15:16.133 +05:30  INF]  Connection id "0HMLJD6673K2M", Request id "0HMLJD6673K2M:00000002": the application completed without reading the entire request body.
+[2022-10-21 19:15:16.133 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 19:15:16.137 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 19:15:16.138 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 19:15:16.138 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5.2425ms
+[2022-10-21 19:15:16.138 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 19:15:16.138 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5.6631ms
+[2022-10-21 19:15:16.163 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - -
+[2022-10-21 19:15:16.164 +05:30  INF]  The file /Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg was not modified
+[2022-10-21 19:15:16.164 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - - - 304 - image/jpeg 1.1251ms
+[2022-10-21 21:23:59.908 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 21:24:00.959 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 21:24:00.960 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 21:24:00.967 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 21:24:00.968 +05:30  INF]  Hosting environment: Development
+[2022-10-21 21:24:00.968 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 21:24:02.200 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 21:24:02.200 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 21:24:04.621 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 21:24:04.636 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 21:24:04.655 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 29.0794ms
+[2022-10-21 21:24:04.657 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 2467.7833ms
+[2022-10-21 21:24:04.740 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:24:04.759 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.4407ms
+[2022-10-21 21:24:04.780 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 21:24:05.361 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 21:24:06.213 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 851.2522ms
+[2022-10-21 21:24:08.830 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 21:24:15.304 +05:30  INF]  Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 21:24:15.574 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 21:24:15.622 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 10826.7044ms
+[2022-10-21 21:24:15.624 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:24:15.643 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 13453.9815ms
+[2022-10-21 21:24:16.875 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - -
+[2022-10-21 21:24:16.885 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - -
+[2022-10-21 21:24:16.888 +05:30  INF]  The file /Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png was not modified
+[2022-10-21 21:24:16.888 +05:30  INF]  The file /Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg was not modified
+[2022-10-21 21:24:16.889 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/cb547c88-8555-4215-9685-b0345fb765dftemplatemo_featured_project_01.jpg - - - 304 - image/jpeg 4.7814ms
+[2022-10-21 21:24:16.889 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/b243bf6c-f3cc-4f9c-9fac-4e07b364e707first.png - - - 304 - image/png 14.4742ms
+[2022-10-21 21:24:16.951 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - -
+[2022-10-21 21:24:16.951 +05:30  INF]  The file /Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg was not modified
+[2022-10-21 21:24:16.952 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/Upload/Images/2b9bf162-e6b4-4389-8405-07ddd4d8064f4.jpg - - - 304 - image/jpeg 0.7698ms
+[2022-10-21 21:26:15.902 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 21:26:16.502 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 599.6557ms
+[2022-10-21 21:26:16.525 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 21:26:16.526 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.5789ms
+[2022-10-21 21:26:16.530 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 21:26:16.583 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.1295ms
+[2022-10-21 21:26:16.872 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 21:26:16.890 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.7333ms
+[2022-10-21 21:26:17.335 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 21:26:17.337 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:26:17.344 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 21:26:17.359 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 21:26:17.372 +05:30  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 21:26:17.374 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 21:26:17.376 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 32.4123ms
+[2022-10-21 21:26:17.377 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:26:17.377 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 41.8494ms
+[2022-10-21 21:26:20.281 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 21:26:20.290 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:26:20.290 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 21:26:20.398 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 21:26:20.401 +05:30  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 21:26:20.402 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 21:26:20.402 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 111.7679ms
+[2022-10-21 21:26:20.402 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:26:20.402 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 121.2280ms
+[2022-10-21 21:28:33.828 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-21 21:28:34.811 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-21 21:28:34.812 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-21 21:28:34.818 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-21 21:28:34.818 +05:30  INF]  Hosting environment: Development
+[2022-10-21 21:28:34.819 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-21 21:28:37.267 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-21 21:28:38.021 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-21 21:28:38.041 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 18.0961ms
+[2022-10-21 21:28:38.068 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 808.4036ms
+[2022-10-21 21:28:38.116 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-21 21:28:38.265 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 149.2545ms
+[2022-10-21 21:28:38.564 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-21 21:28:39.019 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 455.2127ms
+[2022-10-21 21:28:51.270 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - -
+[2022-10-21 21:28:51.592 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:28:51.626 +05:30  INF]  Route matched with {action = "Getproducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[HalfDegreeApi.Models.Product]]] Getproducts() on controller HalfDegreeApi.Controllers.ProductsController (HalfDegreeApi).
+[2022-10-21 21:28:54.366 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-21 21:28:56.523 +05:30  INF]  Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[ImageName], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [products] AS [p]
+[2022-10-21 21:28:56.785 +05:30  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[HalfDegreeApi.Models.Product, HalfDegreeApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-10-21 21:28:56.835 +05:30  INF]  Executed action HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi) in 5196.9897ms
+[2022-10-21 21:28:56.836 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.ProductsController.Getproducts (HalfDegreeApi)'
+[2022-10-21 21:28:56.860 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Products/GetProducts - - - 200 - application/json;+charset=utf-8 5589.1761ms

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<BihariJe_WebApp.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageName)
+                <img src="@item.ImageName">
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@
+
+
+
+<div class="row">
+    @foreach(var product in Model){
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="card text-black m-4">
+                <img src="@product.ImageName"
+                 class="card-img-top" alt="@product.Name" />
+                <div class="card-body">
+                    <div class="text-center mt-1">
+                        <h4 class="card-title">@product.Name</h4>
+                        <h6 class="text-primary mb-1 pb-3">Starting at @product.Price</h6>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                            <h5 class="mb-0">Jay Shree Radhe </h5>
+                        </div>
+
+                       
+
+                        <div class="d-flex flex-column mb-4">
+                            <span class="h1 mb-0">
+                                <i class="fas fa-camera-retro"></i>
+                            </span>
+                            
+                        </div>
+
+                        <div class="d-flex flex-column mb-4">
+                            <span class="h1 mb-0">2x</span>
+                            <span>Optical zoom range</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                             more about
+                        </button>
+                       @* <button type="button" class="btn btn-danger flex-fill ms-1" onclick="ByNowClickFunction(@product.Id)">Buy now</button>*@
+                        <a asp-action="Details" asp-route-id="@product.Id">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+   
+  </div>
+

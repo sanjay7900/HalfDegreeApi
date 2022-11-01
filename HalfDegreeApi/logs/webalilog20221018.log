@@ -1,0 +1,14 @@
+[2022-10-18 17:09:56.799 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:09:58.019 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:09:58.019 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:09:58.028 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:09:58.028 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:09:58.028 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:10:02.643 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:10:03.357 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:10:03.357 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:10:03.383 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 24.5827ms
+[2022-10-18 17:10:03.403 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 770.7096ms
+[2022-10-18 17:10:03.434 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.9827ms
+[2022-10-18 17:10:03.650 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:10:03.974 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 323.5402ms

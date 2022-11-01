@@ -1,0 +1,230 @@
+[2022-10-18 17:25:42.711 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:25:43.079 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:25:43.080 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:25:43.090 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:25:43.090 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:25:43.090 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:25:44.316 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:25:44.880 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:25:44.880 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:25:44.894 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 585.3027ms
+[2022-10-18 17:25:44.932 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 51.9394ms
+[2022-10-18 17:25:44.961 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.0772ms
+[2022-10-18 17:25:45.102 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:25:45.300 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.1557ms
+[2022-10-18 17:26:02.030 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/api/Users/LoginUser?Emailid=jno%3Bniojioj&password=9-0-98809 - -
+[2022-10-18 17:26:02.227 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:26:02.390 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature System.String LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 17:26:05.519 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 17:26:09.733 +05:30  INF]  Executed DbCommand (646ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 17:26:09.862 +05:30  INF]  Executing ObjectResult, writing value of type 'System.String'.
+[2022-10-18 17:26:09.910 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 7500.5652ms
+[2022-10-18 17:26:09.912 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:26:09.996 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/api/Users/LoginUser?Emailid=jno%3Bniojioj&password=9-0-98809 - - - 200 - text/plain;+charset=utf-8 7966.6059ms
+[2022-10-18 17:30:52.223 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:30:54.108 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:30:54.108 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:30:54.116 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:30:54.116 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:30:54.116 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:30:55.325 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:30:56.064 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:30:56.064 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:30:56.098 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.7387ms
+[2022-10-18 17:30:56.135 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 821.7106ms
+[2022-10-18 17:30:56.146 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.4150ms
+[2022-10-18 17:30:56.626 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:30:56.931 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 304.6176ms
+[2022-10-18 17:31:11.179 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/api/Users/LoginUser?Emailid=i09ijijninipun&password=jknojipojj - -
+[2022-10-18 17:31:11.471 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:31:11.515 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 17:31:13.586 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 17:31:15.872 +05:30  INF]  Executed DbCommand (183ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 17:31:15.975 +05:30  INF]  Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+[2022-10-18 17:31:16.112 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 4580.0182ms
+[2022-10-18 17:31:16.114 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:31:16.138 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/api/Users/LoginUser?Emailid=i09ijijninipun&password=jknojipojj - - - 400 - application/problem+json;+charset=utf-8 4959.7413ms
+[2022-10-18 17:31:38.272 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-18 17:31:38.274 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:31:38.275 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 17:31:38.289 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 17:31:38.593 +05:30  INF]  Executed DbCommand (294ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 17:31:38.851 +05:30  INF]  Executed DbCommand (24ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-18 17:31:39.293 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-18 17:31:39.320 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 1044.5681ms
+[2022-10-18 17:31:39.320 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:31:39.321 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 1048.8066ms
+[2022-10-18 17:50:53.247 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:50:54.549 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:50:54.550 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:50:54.559 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:50:54.559 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:50:54.559 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:51:00.779 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:51:04.354 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 3584.0102ms
+[2022-10-18 17:51:04.511 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:51:04.516 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:51:04.524 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 13.1848ms
+[2022-10-18 17:51:04.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.1064ms
+[2022-10-18 17:51:05.120 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:51:05.616 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 496.3863ms
+[2022-10-18 17:51:51.543 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:51:52.267 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:51:52.267 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:51:52.278 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:51:52.278 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:51:52.278 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:51:54.127 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:51:55.237 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:51:55.239 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:51:55.291 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 50.5571ms
+[2022-10-18 17:51:55.300 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1202.7867ms
+[2022-10-18 17:51:55.343 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.9161ms
+[2022-10-18 17:51:55.682 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:51:56.174 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 492.4783ms
+[2022-10-18 17:54:23.229 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:54:23.843 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:54:23.843 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:54:23.850 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:54:23.850 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:54:23.851 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:54:24.753 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:54:25.517 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:54:25.517 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:54:25.588 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 69.5686ms
+[2022-10-18 17:54:25.600 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 857.0251ms
+[2022-10-18 17:54:25.615 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 98.2678ms
+[2022-10-18 17:54:25.857 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:54:26.211 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 353.8038ms
+[2022-10-18 17:54:56.240 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-18 17:54:58.167 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:54:58.209 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 17:55:02.487 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 17:55:13.818 +05:30  INF]  Executed DbCommand (223ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 17:55:14.117 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-18 17:55:15.042 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-18 17:55:15.058 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 16836.7375ms
+[2022-10-18 17:55:15.060 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 17:55:15.097 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 18856.4508ms
+[2022-10-18 17:58:32.287 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 17:58:33.036 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 17:58:33.036 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 17:58:33.044 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 17:58:33.044 +05:30  INF]  Hosting environment: Development
+[2022-10-18 17:58:33.044 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 17:58:38.015 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 17:58:39.491 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 17:58:39.491 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 17:58:39.526 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 31.6247ms
+[2022-10-18 17:58:39.553 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1551.9614ms
+[2022-10-18 17:58:39.567 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.9611ms
+[2022-10-18 17:58:39.922 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 17:58:40.367 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 444.5233ms
+[2022-10-18 18:05:31.228 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 18:05:31.962 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 18:05:31.963 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 18:05:31.971 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 18:05:31.972 +05:30  INF]  Hosting environment: Development
+[2022-10-18 18:05:31.972 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 18:05:33.629 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 18:05:34.373 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 18:05:34.378 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 18:05:34.419 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 43.6562ms
+[2022-10-18 18:05:34.426 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 806.3863ms
+[2022-10-18 18:05:34.480 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.4815ms
+[2022-10-18 18:05:34.792 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 18:05:35.177 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 384.5570ms
+[2022-10-18 18:06:24.862 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-18 18:06:25.236 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:06:25.316 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 18:06:28.122 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 18:06:31.553 +05:30  INF]  Executed DbCommand (237ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 18:06:31.842 +05:30  INF]  Executed DbCommand (10ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-18 18:06:32.443 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-18 18:06:32.488 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 7155.2749ms
+[2022-10-18 18:06:32.489 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:06:32.535 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 7673.0538ms
+[2022-10-18 18:26:48.094 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 18:26:48.996 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 18:26:48.997 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 18:26:49.005 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 18:26:49.005 +05:30  INF]  Hosting environment: Development
+[2022-10-18 18:26:49.005 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 18:26:54.380 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 18:26:55.559 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 18:26:55.569 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 18:26:55.600 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.5352ms
+[2022-10-18 18:26:55.609 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 1244.9307ms
+[2022-10-18 18:26:55.895 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 325.9790ms
+[2022-10-18 18:26:56.259 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 18:26:56.779 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 519.9860ms
+[2022-10-18 18:27:38.308 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-18 18:27:38.670 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:27:38.719 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 18:27:41.060 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 18:27:44.390 +05:30  INF]  Executed DbCommand (185ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 18:27:44.720 +05:30  INF]  Executed DbCommand (54ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-18 18:27:45.296 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-18 18:27:45.312 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 6579.9164ms
+[2022-10-18 18:27:45.313 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:27:45.343 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 7034.9323ms
+[2022-10-18 18:29:21.537 +05:30  INF]  User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-18 18:29:22.246 +05:30  INF]  Now listening on: https://localhost:7242
+[2022-10-18 18:29:22.246 +05:30  INF]  Now listening on: http://localhost:5242
+[2022-10-18 18:29:22.253 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-18 18:29:22.253 +05:30  INF]  Hosting environment: Development
+[2022-10-18 18:29:22.253 +05:30  INF]  Content root path: D:\SaiKumar\HalfDegreeApi\
+[2022-10-18 18:29:24.127 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/index.html - -
+[2022-10-18 18:29:24.968 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_vs/browserLink - -
+[2022-10-18 18:29:24.968 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - -
+[2022-10-18 18:29:24.996 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 25.0701ms
+[2022-10-18 18:29:25.066 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/index.html - - - 200 - text/html;charset=utf-8 953.8008ms
+[2022-10-18 18:29:25.147 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 178.1361ms
+[2022-10-18 18:29:25.399 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - -
+[2022-10-18 18:29:25.867 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7242/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 467.6335ms
+[2022-10-18 18:29:56.308 +05:30  INF]  Request starting HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - -
+[2022-10-18 18:29:56.491 +05:30  INF]  Executing endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:29:56.538 +05:30  INF]  Route matched with {action = "LoginUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(System.String, System.String) on controller HalfDegreeApi.Controllers.UsersController (HalfDegreeApi).
+[2022-10-18 18:29:58.709 +05:30  INF]  Entity Framework Core 6.0.10 initialized 'HalfDegreeApiDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+[2022-10-18 18:30:00.957 +05:30  INF]  Executed DbCommand (195ms) [Parameters=[@__username_0='?' (Size = 450), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[CreatedDate], [u].[Email], [u].[Gender], [u].[Name], [u].[Password], [u].[RoleId]
+FROM [users] AS [u]
+WHERE ([u].[Email] = @__username_0) AND ([u].[Password] = @__password_1)
+[2022-10-18 18:30:01.239 +05:30  INF]  Executed DbCommand (9ms) [Parameters=[@__loginUser_RoleId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Name]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__loginUser_RoleId_0
+[2022-10-18 18:30:01.603 +05:30  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-10-18 18:30:01.618 +05:30  INF]  Executed action HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi) in 5067.8172ms
+[2022-10-18 18:30:01.620 +05:30  INF]  Executed endpoint 'HalfDegreeApi.Controllers.UsersController.LoginUser (HalfDegreeApi)'
+[2022-10-18 18:30:01.639 +05:30  INF]  Request finished HTTP/1.1 GET https://localhost:7242/api/Users/LoginUser?Emailid=san@gmail.com&password=san@Singh7900 - - - 200 - text/plain;+charset=utf-8 5330.9745ms
